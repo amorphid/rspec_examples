@@ -37,7 +37,7 @@ describe "#allow" do
     expect(object.no_arguments).to eq("no arguments")
   end
 
-  it "can stub a function with no arguments" do
+  it "can stub a function with multiple arguments" do
     allow(object).to receive(:multiple_arguments).with("fake arg 1", "fake arg 2") do
       "multiple arguments"
     end
